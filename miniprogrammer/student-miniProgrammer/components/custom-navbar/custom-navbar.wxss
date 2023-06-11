@@ -1,0 +1,36 @@
+/* components/custom-navbar/custom-navbar.wxss */
+.nav {
+	display: flex;
+	height: 44px;
+	color: #fff;
+}
+
+.nav .center {
+	flex: 1;
+}
+
+.left,
+.right,
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left,
+.right {
+	width: 120rpx;
+}
+
+.default {
+	display: none;
+}
+
+.slot:empty+.default {
+	display: flex;
+}
+
+.icon {
+	width: 32rpx;
+	height: 32rpx;
+}

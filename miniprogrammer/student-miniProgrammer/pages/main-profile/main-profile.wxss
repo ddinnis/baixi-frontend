@@ -1,0 +1,71 @@
+/* pages/main-profile/main-profile.wxss */
+page {
+	box-sizing: border-box;
+	padding: 30rpx;
+	background-color: #f3f3f3;
+}
+
+.section {
+	padding: 30rpx;
+	background-color: #fff;
+	border-radius: 20rpx;
+	margin-bottom: 40rpx;
+}
+
+/* 用户信息 */
+.userInfo {
+	display: flex;
+	align-items: center;
+}
+
+.userInfo .avatar {
+	width: 100rpx;
+	height: 100rpx;
+	margin-right: 80rpx;
+	border-radius: 50%;
+}
+
+/*  标签 */
+
+.tabs {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tabs .item {
+	display: flex;
+	flex-direction: column;
+}
+
+.tabs .item .icon {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+/* 创建歌单 */
+.mySongMenu .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30rpx;
+	color: #aaa
+}
+
+.mySongMenu .header .title {
+	margin-top: 0;
+}
+
+.tabs .item .name {
+	font-size: 30rpx;
+}
+
+/* 弹窗 */
+.dialog .input {
+	border-radius: 5%;
+	border: 1px solid #eee;
+	margin: 20rpx 60rpx;
+	padding: 0 16rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	font-size: 28rpx;
+}

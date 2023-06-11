@@ -1,0 +1,33 @@
+<!--pages/main-profile/main-profile.wxml-->
+<view class="userInfo section" bindtap="onUserInfoTap">
+	<image class="avatar" src="{{isLogin ? userInfo.avatarUrl : '../../assets/img/profile/account.png'}}"></image>
+	<view class="nickname">{{isLogin ? userInfo.nickName : "未登录"}}</view>
+</view>
+
+<view class="tabs section">
+	<block wx:for="{{tabs}}" wx:key="type">
+		<view class="item" bindtap="onTabsTap" data-item="{{item}}">
+			<image class="icon" src="/assets/img/profile/{{item.type}}.png"></image>
+			<view class="name">{{item.name}}</view>
+		</view>
+	</block>
+</view>
+
+<view class="mySongMenu section">
+	<area-header title="我的歌单" hasMore="{{false}}"></area-header>
+	<view class="content">
+		<view class="header">
+			<view class="title">创建歌单</view>
+			<van-icon name="plus" bindtap="onShowDialogTap" />
+		</view>
+	</view>
+	<view class="list">
+		<block wx:for="{{menuList}}" wx:key="name">
+			<menu-item-v2 itemData="{{item}}" data-item="{{item}}" bindtap="handleMenu"></menu-item-v2>
+		</block>
+	</view>
+</view>
+
+<van-dialog bind:confirm="onConfirmDialog" class="dialog" use-slot title="创建歌单" show="{{ isShowDialog }}" show-cancel-button>
+	<input class="input" model:value="{{menuName}}" bindinput="onInputValue" type=" text" placeholder="请输入要创建的歌单名" />
+</van-dialog>

@@ -1,0 +1,45 @@
+/* pages/detail-video/detail-video.wxss */
+page {
+	height: 100vh;
+}
+
+.video {
+	width: 100%;
+	/* position: fixed;
+	top: 0;
+	left: 0; */
+}
+
+.content {
+	height: calc(100% - 225px);
+	padding: 5rpx 20rpx;
+}
+
+.content .info {
+	margin-bottom: 30rpx;
+}
+
+.info .format {
+	font-size: 32rpx;
+	color: #555;
+}
+
+.relatedList .item {
+	display: flex;
+	padding: 16rpx 12rpx 16rpx 0;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.relatedList .image {
+	width: 240rpx;
+	height: 240rpx;
+	border-radius: 16rpx;
+}
+
+.relatedList .title {
+	margin-left: 16rpx;
+	flex: 1;
+	font-size: 32rpx;
+	color: #555;
+}

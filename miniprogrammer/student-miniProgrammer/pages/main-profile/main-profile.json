@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "area-header": "/components/area-header/area-header",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-dialog": "@vant/weapp/dialog/index",
+        "menu-item-v2": "/components/menu-item-v2/menu-item-v2"
+    }
+}

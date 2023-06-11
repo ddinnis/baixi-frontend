@@ -1,0 +1,20 @@
+<!--pages/detail-video/detail-video.wxml-->
+<wxs module="format" src='/utils/format.wxs'></wxs>
+
+<video class="video" src="{{mvUrl}}" referrer-policy="origin"></video>
+<scroll-view class="content" scroll-y>
+	<view class="info">
+		<view>{{mvInfo.name}}</view>
+		<view>{{mvInfo.artistName}}</view>
+		<view class="format">{{format.formatCount(mvInfo.playCount)}} {{mvInfo.publishTime}}</view>
+	</view>
+
+	<view class="relatedList">
+		<block wx:for="{{relatedList}}" wx:key="vid">
+			<view class="item">
+				<image class="image" src="{{item.coverUrl}}" mode="widthFix" />
+				<view class="title">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+</scroll-view>

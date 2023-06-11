@@ -1,0 +1,32 @@
+<!--pages/detail-search/detail-search.wxml-->
+<van-search bind:click-input="onSearchClick" value="{{ searchValue }}" background="#fafafa" shape="round" bind:change="onChange" bind:search="onSearch" show-action="{{searchValue}}" />
+
+<view class="hotList" wx:if="{{!searchValue.length && !searchSuggestList.length}}">
+	<area-header title="热门搜索" hasMore="{{false}}"></area-header>
+	<view class="list">
+		<block wx:for="{{hotList}}" wx:key="first">
+			<view class="tag" bindtap="onHotItemTap" data-item="{{item}}">{{item.first}}</view>
+		</block>
+	</view>
+
+</view>
+
+<view class="suggest" wx:elif="{{searchSuggestList.length && !searchResList.length}}">
+	<view class="title">搜索"{{searchValue}}"</view>
+
+	<block wx:for="{{searchSuggestList}}" wx:key="id">
+		<view class="list">
+			<image class="icon" src="/assets/img/icons/search_icon.png"></image>
+			<view class="name">{{item.name}}</view>
+		</view>
+	</block>
+
+</view>
+
+<view class="showRes" wx:elif="{{!searchSuggestList.length && searchResList.length}}">
+	<block wx:for="{{searchResList}}" wx:key="id">
+		<view class="list">
+			<song-item-v2 itemData="{{item}}" index="{{index+1}}" hasMore="{{false}}"></song-item-v2>
+		</view>
+	</block>
+</view>
