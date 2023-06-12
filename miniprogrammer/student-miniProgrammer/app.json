@@ -5,9 +5,12 @@
         "pages/detail-search/detail-search",
         "pages/detail-song/detail-song",
         "pages/detail-menu/detail-menu",
-        "pages/main-profile/main-profile"
+        "pages/main-profile/main-profile",
+        "pages/login/login",
+        "pages/notice/notice"
     ],
-    "subPackages": [{
+    "subPackages": [
+        {
             "root": "packageVideo",
             "pages": [
                 "pages/detail-video/detail-video"
@@ -29,7 +32,8 @@
         }
     },
     "tabBar": {
-        "list": [{
+        "list": [
+            {
                 "pagePath": "pages/main-music/main-music",
                 "text": "音乐",
                 "iconPath": "assets/img/tabbar/music_normal.png",

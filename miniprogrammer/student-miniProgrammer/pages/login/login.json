@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-field": "@vant/weapp/field/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "nav-bar": "/components/custom-navbar/custom-navbar"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+}

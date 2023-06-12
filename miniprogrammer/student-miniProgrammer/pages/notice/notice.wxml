@@ -1,0 +1,17 @@
+<!--pages/notice/notice.wxml-->
+<image class="bg-image bg-cover" src="https://p1.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">使用须知</view>
+	</view>
+</nav-bar>
+
+<view class="page">
+	<view class="content">
+		(欢迎及简要说明，学生是否资助中，会有不同的说明。）（欢迎及简要说明，学生是否资助中，会有不同的说明。）（欢迎及简要说明学生是否资助中，会有不同的说明。）（欢迎及简要说明，学生是否资助中，会有不同的说明。）（欢迎及简要说明，学生是否资助中,会有不同的说明。）
+	</view>
+</view>
+<button class="confirm-btn">确定</button>
+

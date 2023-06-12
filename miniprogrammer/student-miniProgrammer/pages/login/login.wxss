@@ -1,0 +1,112 @@
+/* pages/login/login.wxss */
+.bg-image,
+.bg-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-cover .image {
+	width: 200px;
+	height: 300px;
+}
+
+.top-tabs {
+	display: flex;
+	font-size: 40rpx;
+	color: #fff;
+}
+
+.login-page{
+	background-color: #fff;
+	z-index: 9;
+	width: 100vw;
+	height: 65vh;
+	position: absolute;
+	bottom: 0;
+	border-top-left-radius: 13%;
+	border-top-right-radius: 13%;
+}
+
+.content{
+	padding: 13vw 10vw 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-title{
+	font-size: larger;
+	font-weight:600;
+
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 80rpx;
+}
+
+.baixi-id{
+	border-bottom: #D3D3D3 solid 2px;
+}
+
+/* 密码 */
+.password{
+	margin-top: 70rpx;
+}
+ .warming-text{
+	display: flex;
+	justify-content: center;
+}
+.verificationCode {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0 30px;
+  }
+  .verificationCode > input {
+	width: calc(200%);
+	position: absolute;
+	left: -100px;
+	top: 20px;
+	height: 60px;
+	background: #e9e9e9;
+	opacity: 0;
+	font-size: 10px;
+  }
+  .verificationCode > view {
+	width: 55px;
+	border: 1rpx solid #979797;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 4px;
+	font-size: 30px;
+	color: #4DBF6E;
+  }
+  .verificationCode .activeView {
+	border-color: #4DBF6E;
+  }
+  /* 同意使用须知 */
+  .notice {
+	  display: flex;
+  }
+  .notice-text{
+	color: #409eff;
+	border-bottom: 1px solid #409eff;
+  }
+
+  /* 登录按钮 */
+  .login-btn{
+	  margin-top: 60rpx;
+	  height: 120rpx;
+	  background-color: #409eff;
+	  color: blanchedalmond;
+
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }

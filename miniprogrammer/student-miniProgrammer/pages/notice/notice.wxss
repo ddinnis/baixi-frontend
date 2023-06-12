@@ -1,0 +1,51 @@
+/* pages/notice/notice.wxss */
+.top-tabs {
+	display: flex;
+	font-size: 40rpx;
+	color: #fff;
+}
+
+/* 背景图 */
+.bg-image,
+.bg-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-cover .image {
+	width: 200px;
+	height: 300px;
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+	z-index: 9;
+	width: 85vw;
+	height: 65vh;
+	margin: 3vh auto;
+}
+.page .content{
+	color: #1E293B;
+	padding: 50rpx;
+}
+
+  /* 登录按钮 */
+  .confirm-btn{
+	margin-top: 60rpx;
+	height: 120rpx;
+	background-color: #409eff;
+	color: blanchedalmond;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 85vw;
+}

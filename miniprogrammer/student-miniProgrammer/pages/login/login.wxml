@@ -1,0 +1,38 @@
+<!--pages/login/login.wxml-->
+<image class="bg-image bg-cover" src="https://p1.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view>登录</view>
+	</view>
+</nav-bar>
+
+<view class="login-page">
+	<view class="content">
+		<view class="top-title">百蹊一对一通信【学生端】</view>
+		<view class="baixi-id">
+			<van-field label="No." value="{{ value }}" placeholder="请输入百蹊编号" border clearable auto-focus bind:change="onChange"
+			title-width="2.1em"
+			 />
+		</view>
+		<view class="password">
+			<view class="warming-text">请输入5位密码，密码请勿告诉他人</view>
+			<view class="verificationCode">
+				<input type="number" maxlength="5" bindinput="inputValue" focus />
+				<view class="{{veCode[0] ? 'activeView' : 0}}">{{veCode[0]}}</view>
+				<view class="{{veCode[1] ? 'activeView' : 0}}">{{veCode[1]}}</view>
+				<view class="{{veCode[2] ? 'activeView' : 0}}">{{veCode[2]}}</view>
+				<view class="{{veCode[3] ? 'activeView' : 0}}">{{veCode[3]}}</view>
+				<view class="{{veCode[3] ? 'activeView' : 0}}">{{veCode[4]}}</view>
+  			</view>
+		</view>
+		<view class="notice">
+			<van-checkbox  value="{{ true }}" shape="square" bind:change="onChange"></van-checkbox>
+			同意 <view class="notice-text" bindtap='onNoticeClick'>使用须知</view>
+		</view>
+		<view class="login">
+			<button class="login-btn">登录</button>
+		</view>
+	</view>
+</view>
