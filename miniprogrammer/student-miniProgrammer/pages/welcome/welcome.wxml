@@ -1,0 +1,20 @@
+<!--pages/notice/notice.wxml-->
+<image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">欢迎</view>
+	</view>
+</nav-bar>
+
+<view class="page">
+	<view class="content">
+		<view class="name">xxx 同学：</view>
+		<view class="text">
+			欢迎及简要说明，学生是否资助中，会有不同的说明。
+		</view>
+	</view>
+</view>
+<button class="confirm-btn">确定</button>
+

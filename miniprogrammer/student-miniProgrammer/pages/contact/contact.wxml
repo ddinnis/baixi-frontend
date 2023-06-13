@@ -1,0 +1,50 @@
+<!--pages/contact/contact.wxml-->
+<!--pages/notice/notice.wxml-->
+<image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">往来</view>
+	</view>
+</nav-bar>
+
+<view class="page">
+	<view class="content">
+		<view class="sponsor">资助人：AAA</view>
+		<!-- 收信 -->
+		<view class="overview-item" bindtap="onSongItemTap">
+			<view class="name-icon left">收信人</view>
+				<view class="right-item">
+					<view class="info">
+						<view class="mail-title">你好</view>
+						<view class="mail-detail">信件文字信件文字信件文字信件文字</view>
+					</view>
+					<view class="gmtCreate"> 3月11日 </view>
+					<view class="arrow">
+						<van-icon name="arrow" />
+					</view>
+				</view>
+		</view>
+		<!-- 寄信 -->
+		<view class="overview-item" bindtap="onSongItemTap">
+			<view class="left-item">
+				<view class="arrow">
+					<van-icon name="arrow-left" />
+				</view>
+				<view class="gmtCreate"> 3月11日 </view>
+				<view class="info">
+					<view class="mail-title">你好</view>
+					<view class="mail-detail">信件文字信件文字信件文字信件文字</view>
+				</view>
+			</view>
+			<view class="name-icon right">寄信人</view>
+		</view>
+	</view>
+</view>
+<view class="btns">
+	<view class="help-btn btn">发图</view>
+	<view class="logout-btn btn">写信</view>	
+</view>
+
+
+

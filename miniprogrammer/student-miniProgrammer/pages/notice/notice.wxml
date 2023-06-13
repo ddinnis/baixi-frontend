@@ -1,5 +1,5 @@
 <!--pages/notice/notice.wxml-->
-<image class="bg-image bg-cover" src="https://p1.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg" mode="aspectFill"></image>
+<image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
 <view class="bg-cover"></view>
 
 <nav-bar>

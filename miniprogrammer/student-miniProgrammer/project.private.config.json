@@ -44,8 +44,29 @@
                     "scene": null
                 },
                 {
-                    "name": "使用须知",
+                    "name": "notice",
                     "pathName": "pages/notice/notice",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "welcome",
+                    "pathName": "pages/welcome/welcome",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "overview",
+                    "pathName": "pages/overview/overview",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "contact",
+                    "pathName": "pages/contact/contact",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

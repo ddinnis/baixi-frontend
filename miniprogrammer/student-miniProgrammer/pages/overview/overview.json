@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "nav-bar": "/components/custom-navbar/custom-navbar",
+        "song-item-v1": "/components/song-item-v1/song-item-v1",
+        "van-icon": "@vant/weapp/icon/index"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+}

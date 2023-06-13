@@ -1,0 +1,36 @@
+<!--pages/notice/notice.wxml-->
+<image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">总览</view>
+	</view>
+</nav-bar>
+
+<view class="page">
+	<view class="content">
+		<!-- <song-item-v1 itemData="{{item}}" bindtap="onSongItemTap"></song-item-v1> -->
+		<view class="overview-item" bindtap="onSongItemTap">
+			<image class="img" src="../../assets/img/1.png"></image>
+				<view class="right-item">
+					<view class="info">
+						<view class="sponsor">资助人：AAA</view>
+						<view class="extra-info">信件：8 图片：8</view>
+					</view>
+					<view class="sponsor-status">
+						资助中
+					</view>
+					<view class="arrow">
+						<van-icon name="arrow" />
+					</view>
+				</view>
+		</view>
+	</view>
+</view>
+<view class="btns">
+	<view class="help-btn btn">帮助</view>
+	<view class="logout-btn btn">退出</view>	
+</view>
+
+

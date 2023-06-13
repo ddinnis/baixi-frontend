@@ -7,7 +7,10 @@
         "pages/detail-menu/detail-menu",
         "pages/main-profile/main-profile",
         "pages/login/login",
-        "pages/notice/notice"
+        "pages/notice/notice",
+        "pages/welcome/welcome",
+        "pages/overview/overview",
+        "pages/contact/contact"
     ],
     "subPackages": [
         {

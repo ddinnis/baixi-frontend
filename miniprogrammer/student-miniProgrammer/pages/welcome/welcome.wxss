@@ -30,12 +30,23 @@
 	width: 85vw;
 	height: 65vh;
 	margin: 3vh auto;
-	
+
 	border-radius: 2%;
 }
 .page .content{
 	color: #1E293B;
 	padding: 50rpx;
+}
+.page .content .name{
+	margin-bottom: 1em;
+	font-weight: 600;
+}
+.page .content .text{
+	text-indent:2em;
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 25px;
 }
 
   /* 登录按钮 */

@@ -1,0 +1,150 @@
+/* pages/contact/contact.wxss */
+/* pages/notice/notice.wxss */
+.top-tabs {
+	display: flex;
+	font-size: 40rpx;
+	color: #fff;
+}
+
+/* 背景图 */
+.bg-image,
+.bg-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-cover .image {
+	width: 200px;
+	height: 300px;
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+	z-index: 9;
+	width: 85vw;
+	height: 65vh;
+	margin: 3vh auto;
+	border-radius: 2%;
+}
+.page .content{
+	padding: 50rpx;
+}
+
+/* overview-item */
+.overview-item {
+	display: flex;
+	padding: 16rpx 0;
+	align-items: center;
+	width: 100%;
+}
+
+.content .sponsor {
+	margin-bottom: 20rpx;
+}
+
+ .content .name-icon {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #b3b4c5;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 16px;
+    text-indent: 8px;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #fff;
+    word-break: break-all;
+}
+.name-icon,.left{
+	margin-right: 30rpx;
+}
+.name-icon.right{
+	margin-left: 30rpx;
+}
+
+.right-item,
+.left-item {
+	display: flex;
+	border-bottom:  solid 1px #DEDEDE;
+	padding-bottom: 20rpx;
+}
+
+.info {
+	margin-right: 0 32rpx;
+	flex: 1;
+}
+
+.right-item .info .mail-title {
+	font-size: 30rpx;
+	color: #555;
+	display: flex;
+}
+
+.left-item .info .mail-title {
+	font-size: 30rpx;
+	color: #555;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.info .mail-detail {
+	margin-top: 16rpx;
+	font-size: 20rpx;
+	color: #999;
+	width: 40vw;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.gmtCreate{
+	color: #999;
+	font-size: 20rpx;
+	margin: 0 10rpx ;
+	width: 80rpx;
+}
+.arrow{
+	display: flex;
+	color: #999;
+	align-items: start;
+}
+
+  /* 按钮 */
+.btns{
+	display: flex;
+	margin-top: 80rpx;
+	justify-content: space-around;
+}
+.btn{ 
+	letter-spacing: 0.2rem;
+	color: white;
+	font-size: 40rpx;
+	font-weight: 300;
+
+	text-align: center;
+	line-height: 45rpx; 
+	background-color: transparent;   /*按钮透明*/  
+	border:none;				/*设置按钮边框*/
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-bottom: solid 1px white;
+
+	margin: 40rpx ;
+	padding-bottom: 15rpx;
+}
+.btn::after{
+	border:none；
+}
