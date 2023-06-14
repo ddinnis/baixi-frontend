@@ -36,6 +36,7 @@
 .page .content{
 	color: #1E293B;
 	padding: 50rpx;
+	overflow: scroll;
 }
 
   /* 登录按钮 */

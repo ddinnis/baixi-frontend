@@ -43,6 +43,7 @@
 	padding: 16rpx 0;
 	align-items: center;
 	width: 100%;
+	border-bottom:  solid 1px #DEDEDE;
 }
 
 .content .sponsor {
@@ -75,7 +76,6 @@
 .right-item,
 .left-item {
 	display: flex;
-	border-bottom:  solid 1px #DEDEDE;
 	padding-bottom: 20rpx;
 }
 

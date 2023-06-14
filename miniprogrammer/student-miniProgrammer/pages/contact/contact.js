@@ -1,16 +1,15 @@
 // pages/contact/contact.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        "gmtCreate": "3月11日",
+        "mail": "文字文字文字文字文字文字文字文字",
+        "picUrl": "",
+        "read": true,
+        "receiver": "收件人",
+        "receiverName": "",
+        "sender": "",
+        "senderName": ""
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
     onLoad(options) {
 
     },

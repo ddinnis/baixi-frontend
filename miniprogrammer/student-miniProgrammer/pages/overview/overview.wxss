@@ -34,6 +34,7 @@
 }
 .page .content{
 	padding: 50rpx;
+	overflow: scroll;
 }
 
 /* overview-item */
@@ -46,8 +47,8 @@
 
 .img {
 	margin-right: 32rpx;
-	width: 120rpx;
-	height: 120rpx;
+	width: 100rpx;
+	height: 100rpx;
 	border-radius: 16rpx;
 }
 .right-item{
@@ -75,7 +76,6 @@
 .sponsor-status{
 	display: flex;
 	align-items: center;
-	color:green;
 	font-size: 24rpx;
 	margin: 0 40rpx 0 30rpx ;
 }

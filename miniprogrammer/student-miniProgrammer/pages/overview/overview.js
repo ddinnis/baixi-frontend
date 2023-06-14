@@ -1,11 +1,72 @@
 // pages/notice/notice.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        overviewList:[
+           {
+            hasNewMsg:true,
+            sponsor:"AAA",
+            mailCount:22,
+            picCount:11,
+            sponsorStatusStr:"资助中",
+            sponsorStatus:1
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"BBB",
+            mailCount:8,
+            picCount:8,
+            sponsorStatusStr:"资助终止",
+            sponsorStatus:0
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"CCC",
+            mailCount:2,
+            picCount:1,
+            sponsorStatusStr:"资助终止",
+            sponsorStatus:0
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"AAA",
+            mailCount:22,
+            picCount:11,
+            sponsorStatusStr:"资助中",
+            sponsorStatus:1
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"AAA",
+            mailCount:22,
+            picCount:11,
+            sponsorStatusStr:"资助终止",
+            sponsorStatus:0
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"ABC",
+            mailCount:22,
+            picCount:11,
+            sponsorStatusStr:"资助中",
+            sponsorStatus:1
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"Alice",
+            mailCount:23,
+            picCount:2,
+            sponsorStatusStr:"资助中",
+            sponsorStatus:1
+           },
+           {
+            hasNewMsg:true,
+            sponsor:"Alex",
+            mailCount:2,
+            picCount:9,
+            sponsorStatusStr:"资助终止",
+            sponsorStatus:0
+           },
+       ]
     },
 
     /**

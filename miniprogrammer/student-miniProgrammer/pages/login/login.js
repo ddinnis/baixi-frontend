@@ -1,52 +1,62 @@
+
 // pages/login/login.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        baixiId:"",
+        password:"",
+        inputLen:5,
+        isFocus:false,
+        isAgree:false
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
     onLoad(options) {
 
+    },
+    onFocus(e){
+        this.setData({isFocus:true});
+      },
+    setValue(e){
+        this.setData({ password: e.detail.value });
+    },
+    onNoChange(e){
+        let value = e.detail;
+        this.setData({ baixiId: value })
+    },
+    inputValue(e) {
+        let value = e.detail;
+        console.log('e',e)
+        let arr = [...value];
+        this.setData({ password: arr })
+      },
+    onAgreeClick(){
+        this.setData({isAgree:!this.data.isAgree})
     },
     onNoticeClick() {
         wx.navigateTo({
             url: "/pages/notice/notice",
         });
     },
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
+    onLoginClick(){
+        let param = {
+            "baiXiId": this.data.baixiId,
+            "password": this.data.password,
+        }
+        console.log("param",param)
 
+        // wx.navigateTo({
+        //     url: "/pages/welcome/welcome",
+        // });
+        wx.showModal({
+            title: '提示',
+            content: '这是一个模态弹窗',
+            success (res) {
+              if (res.confirm) {
+                console.log('用户点击确定')
+              } else if (res.cancel) {
+                console.log('用户点击取消')
+              }
+            }
+          })
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */

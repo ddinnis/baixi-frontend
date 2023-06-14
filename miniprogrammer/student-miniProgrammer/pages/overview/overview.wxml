@@ -1,6 +1,5 @@
 <!--pages/notice/notice.wxml-->
 <image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
-<view class="bg-cover"></view>
 
 <nav-bar>
 	<view slot='center' class="top-tabs">
@@ -11,20 +10,22 @@
 <view class="page">
 	<view class="content">
 		<!-- <song-item-v1 itemData="{{item}}" bindtap="onSongItemTap"></song-item-v1> -->
-		<view class="overview-item" bindtap="onSongItemTap">
-			<image class="img" src="../../assets/img/1.png"></image>
+		<view wx:for="{{overviewList}}" wx:for-item="item">
+			<view class="overview-item" bindtap="onSongItemTap">
+				<image class="img" src="../../assets/img/1.png"></image>
 				<view class="right-item">
-					<view class="info">
-						<view class="sponsor">资助人：AAA</view>
-						<view class="extra-info">信件：8 图片：8</view>
-					</view>
-					<view class="sponsor-status">
-						资助中
-					</view>
-					<view class="arrow">
-						<van-icon name="arrow" />
-					</view>
+						<view class="info">
+							<view class="sponsor">资助人：{{item.sponsor}}</view>
+							<view class="extra-info">信件：{{item.mailCount}} 图片：{{item.picCount}}</view>
+						</view>
+						<view style="color:{{item.sponsorStatus === 0 ?  'red' : 'green'}};" class="sponsor-status" >
+							{{item.sponsorStatusStr}}
+						</view>
+						<view class="arrow">
+							<van-icon name="arrow" info=" {{item.hasNewMsg ? 'New' :'' }}"/>
+						</view>
 				</view>
+			</view>
 		</view>
 	</view>
 </view>

@@ -1,5 +1,4 @@
 <!--pages/contact/contact.wxml-->
-<!--pages/notice/notice.wxml-->
 <image class="bg-image bg-cover" src="../../assets/img/5.png" mode="aspectFill"></image>
 
 <nav-bar>
