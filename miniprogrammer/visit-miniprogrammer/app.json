@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "pages/set-password/set-password"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "baixi",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "sitemapLocation": "sitemap.json"
+}

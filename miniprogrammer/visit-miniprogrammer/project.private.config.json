@@ -1,0 +1,78 @@
+{
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "projectname": "visit-miniprogrammer",
+    "setting": {
+        "compileHotReLoad": true,
+        "urlCheck": false,
+        "bigPackageSizeSupport": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "set-password",
+                    "pathName": "pages/set-password/set-password",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "音乐主页",
+                    "pathName": "pages/main-music/main-music",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "播放列表",
+                    "pathName": "pages/music-player/music-player",
+                    "query": "id=1822439628",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "我的页面",
+                    "pathName": "pages/main-profile/main-profile",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "搜索页面",
+                    "pathName": "pages/detail-search/detail-search",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "notice",
+                    "pathName": "pages/notice/notice",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "welcome",
+                    "pathName": "pages/welcome/welcome",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "overview",
+                    "pathName": "pages/overview/overview",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "contact",
+                    "pathName": "pages/contact/contact",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
