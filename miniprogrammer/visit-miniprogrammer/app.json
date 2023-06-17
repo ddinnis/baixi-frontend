@@ -1,6 +1,7 @@
 {
     "pages": [
-        "pages/set-password/set-password"
+        "pages/set-password/set-password",
+        "pages/input-password/input-password"
     ],
     "window": {
         "backgroundTextStyle": "dark",

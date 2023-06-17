@@ -1,41 +1,69 @@
 Page({
     data: {
         baixiId:"",
-        password:"",
+        studentName:"",
     },
     onLoad(options) {
-
+      this.startScan();
     },
-    scancode(e){
-      innerAudioContext.play() // 提示音
-      let baixiId = e.detail.result // 校验扫描结果，并处理
-      this.setData({baixiId})
+    startScan(e){
+     // innerAudioContext.play() // 提示音
+      wx.scanCode({
+        success: res => {
+         this.setData({baixiId: res.result})
+        },
+        complete: () => {
+          console.log("complete");
+        },
+        fail: (res) => {
+          wx.showToast({
+            title: '扫码失败',
+            icon: 'none',
+            duration: 1000
+          })
+        }
+      })
+    },
+    onScan(e){
+        console.log("onScan...",e.detail.result) // 打印出扫码结果
+        this.startScan() // 继续扫码
     },
     onIdChange(e){
-        let value = e.detail;
-        this.setData({ baixiId: value })
+        this.setData({ baixiId: e.detail })
+    },
+    onNameChange(e){
+      this.setData({ studentName: e.detail })
     },
     onSetPasswordClick(){
-        let param = {
-            "baiXiId": this.data.baixiId,
-            "password": this.data.password,
-        }
-        console.log("param",param)
+      if(!this.data.baixiId){
+        wx.showToast({
+          title: '请输入百蹊编号',
+          icon: 'error',
+          duration: 1000
+        })
+      }
+      if(!this.data.studentName){
+        wx.showToast({
+          title: '请输入学生姓名',
+          icon: 'error',
+          duration: 1000
+        })
+      }
 
-        // wx.navigateTo({
-        //     url: "/pages/welcome/welcome",
-        // });
-        wx.showModal({
-            title: '提示',
-            content: '这是一个模态弹窗',
-            success (res) {
-              if (res.confirm) {
-                console.log('用户点击确定')
-              } else if (res.cancel) {
-                console.log('用户点击取消')
-              }
-            }
-          })
+      let param = {
+          "baixiId": this.data.baixiId,
+          "studentName": this.data.studentName,
+      }
+
+      wx.navigateTo({
+        url: '/pages/input-password/input-password',
+        success: function(res) {
+          res.eventChannel.emit('fullData', { data: param })
+        }
+      })
+       
+      console.log("param",param)
+       
     },
     /**
      * 页面相关事件处理函数--监听用户下拉动作

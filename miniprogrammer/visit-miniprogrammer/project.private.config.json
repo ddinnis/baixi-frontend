@@ -71,8 +71,23 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "set-password",
+                    "pathName": "pages/set-password/set-password",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "input-password",
+                    "pathName": "pages/input-password/input-password",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }
-    }
+    },
+    "libVersion": "2.32.2"
 }
