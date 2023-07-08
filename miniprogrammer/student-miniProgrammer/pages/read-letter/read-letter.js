@@ -23,6 +23,10 @@ Page({
     onLoad(options) {
 
     },
+    changeCurrent(e){
+        let {current} =  e.detail;
+        this.setData({current})
+    },
     prevImg: function () {
         let current = this.data.current;
         current = current > 0 ? current - 1 : this.data.letterList.length - 1;

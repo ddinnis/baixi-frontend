@@ -69,18 +69,6 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/reviewers-management',
-    component: Layout,
-    children: [
-      {
-        path: 'reviewers-management',
-        name: 'reviewers-management',
-        component: () => import('@/views/reviewers-management/index'),
-        meta: { title: '审查员管理', icon: 'table' }
-      }
-    ]
-  },
-  {
     path: '/visitors-management',
     component: Layout,
     children: [
@@ -89,6 +77,18 @@ export const constantRoutes = [
         name: 'visitors-management',
         component: () => import('@/views/visitors-management/index'),
         meta: { title: '访查员管理', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: '/reviewers-management',
+    component: Layout,
+    children: [
+      {
+        path: 'reviewers-management',
+        name: 'reviewers-management',
+        component: () => import('@/views/reviewers-management/index'),
+        meta: { title: '审查员管理', icon: 'table' }
       }
     ]
   },

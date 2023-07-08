@@ -1,2 +1,21 @@
-<!--pages/letter-notice/letter-notice.wxml-->
-<text>pages/letter-notice/letter-notice.wxml</text>
+<!--pages/notice/notice.wxml-->
+<image class="bg-image bg-cover" src="../../assets/img/4.png" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">写信</view>
+	</view>
+</nav-bar>
+
+<view class="page">
+	
+		<view class="content">
+			<view class="title">温馨提醒</view>
+			<view class="sentence">为保护受助学生及资助人的利益，百溪有权查询通信及图片内容。</view>
+			<view class="sentence red">不建议把资助人照片、信件隐私内容发到朋友国等社交媒体。</view>
+			<view class="sentence">如需发送，请务必对<p class="red">资助人姓名等隐私内容及资助人面容打马赛克。</p></view>
+		</view>
+</view>
+<button class="confirm-btn" bindtap="onConfirmClick">确定</button>
+

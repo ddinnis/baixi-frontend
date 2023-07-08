@@ -26,7 +26,7 @@
 
 
 
-<swiper style="height: 80vh;" previous-margin='25' next-margin='25' current="{{current}}">
+<swiper style="height: 80vh;" previous-margin='25' next-margin='25' current="{{current}}" bindchange="changeCurrent">
 	<block wx:for="{{letterList}}" wx:key="item.receiveTime">
 		<swiper-item>
 			<view class="page">

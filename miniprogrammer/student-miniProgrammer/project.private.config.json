@@ -73,14 +73,14 @@
                 },
                 {
                     "name": "写信--提示",
-                    "pathName": "pages/main-music/main-music",
+                    "pathName": "pages/letter-notice/letter-notice",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "写信界面",
-                    "pathName": "pages/email/email",
+                    "pathName": "pages/letter/letter",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
@@ -88,13 +88,6 @@
                 {
                     "name": "test",
                     "pathName": "pages/article/article",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "email",
-                    "pathName": "pages/email/email",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

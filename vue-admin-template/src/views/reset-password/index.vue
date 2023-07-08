@@ -2,6 +2,7 @@
   <div class="app-container">
     <el-col :span="10">
       <el-form
+        :rules="rules"
         ref="resetPasswordForm"
         :model="resetPasswordForm"
         status-icon
@@ -29,8 +30,8 @@
           />
         </el-form-item>
 
-        <el-form-item>
-          <el-button type="primary" @click="submitForm('ruleForm')">
+        <el-form-item class="btn">
+          <el-button type="primary" @click="submitForm('resetPasswordForm')">
             重置
           </el-button>
         </el-form-item>
@@ -54,6 +55,31 @@ export default {
     }
   },
   data() {
+    var validateCheckPass = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请再次输入密码'))
+      } else if (value !== this.resetPasswordForm.pass) {
+        callback(new Error('两次输入密码不一致!'))
+      } else {
+        callback()
+      }
+    }
+    var validatePass = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('新密码不能为空'))
+      }
+    }
+    var validateName = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('学生姓名不能为空'))
+      }
+    }
+    var validateID = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('学生ID不能为空'))
+      }
+    }
+
     return {
       list: null,
       listLoading: true,
@@ -62,14 +88,35 @@ export default {
         studentName: '',
         pass: '',
         checkPass: ''
+      },
+      rules: {
+        checkPass: [{ validator: validateCheckPass, trigger: 'blur' }],
+        Pass: [{ validator: validatePass, trigger: 'blur' }],
+        studentName: [{ validator: validateName, trigger: 'blur' }],
+        studentId: [{ validator: validateID, trigger: 'blur' }]
       }
     }
   },
   created() {},
   methods: {
-    submitForm(date) {
-      console.log(date)
+    submitForm(formName) {
+      console.log(this.resetPasswordForm)
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          console.log('submit!')
+        } else {
+          console.log('error submit!!')
+          return false
+        }
+      })
     }
   }
 }
 </script>
+
+<style scoped>
+.btn {
+  display: flex;
+  justify-content: center;
+}
+</style>
