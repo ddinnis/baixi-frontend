@@ -1,0 +1,83 @@
+.page .container{
+	width: 100%;
+	padding: 40rpx;
+}
+.content{
+	text-indent: 2em;
+}
+.ql-container {
+  box-sizing: border-box;
+  padding: 12px 15px;
+  width: 100%;
+  height: 92%;
+  background: #fff;
+  margin-top: 24rpx;
+  font-size: 16px;
+  line-height: 1.5;
+  border: dashed #f3f3f3;
+  border-radius: 15rpx;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 背景图 */
+.bg-image,
+.bg-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-cover .image {
+	width: 200px;
+	height: 300px;
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+	z-index: 9;
+	width: 85vw;
+	height: 70vh;
+	margin: 3vh auto;
+	margin-top: 5vh;
+	border-radius: 2%;
+}
+
+.contact{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: solid 4rpx #f3f3f3;
+}
+.contact .receiver {
+	color:#554f4f;
+	margin-bottom: 20rpx;
+}
+.receiveTime{
+	color:#554f4f;
+}
+
+/* arrows */
+.arrows{
+	width: 85vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
+	position: relative;
+}
+.arrow-left{
+	position: absolute;
+	left: 0;
+}
+.arrow-right{
+	position: absolute;
+	right: 0;
+}

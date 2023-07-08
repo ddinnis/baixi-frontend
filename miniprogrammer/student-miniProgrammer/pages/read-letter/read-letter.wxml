@@ -1,0 +1,59 @@
+<image class="bg-image bg-cover" src="../../assets/img/4.png" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+
+<nav-bar>
+	<view slot='center' class="top-tabs">
+		<view bindtap="onNavTapItemTap">读信</view>
+	</view>
+</nav-bar>
+
+<!-- <view class="page">
+	<view class="container">
+      <view class="contact">
+        <view class="receiver">写信人：{{writer}}</view>
+        <view class="receiveTime">{{receiveTime}}</view>
+      </view>
+      <editor id="editor" 
+			class="ql-container" 
+			showImgSize 
+			showImgToolbar 
+			showImgResize 
+			bindstatuschange="onStatusChange" 
+			read-only="{{readOnly}}" 
+			bindready="onEditorReady"></editor>
+  </view>
+</view> -->
+
+
+
+<swiper style="height: 80vh;" previous-margin='25' next-margin='25' current="{{current}}">
+	<block wx:for="{{letterList}}" wx:key="item.receiveTime">
+		<swiper-item>
+			<view class="page">
+				<view class="container">
+					<view class="contact">
+						<view class="receiver">写信人：{{item.writer}}</view>
+						<view class="receiveTime">{{item.receiveTime}}</view>
+					</view>
+					<view class="ql-container">
+						<view class="content" wx:if="{{item.content}}">{{item.content}}</view>
+						<block wx:if="{{item.picUrlList}}">
+								<view wx:for="{{item.picUrlList}}" wx:for-item="img" wx:key="img.length">
+									<van-image fit="contain" width="100%" height="150" lazy-load src="{{img}}" />
+								</view>
+						</block>
+					</view>
+				</view>
+			</view>
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="arrows">
+<block wx:if="{{current !== 0}}">
+	<van-icon class="arrow-left" name="arrow-left"  bindtap='prevImg' color="white" size="45px"/>
+</block>
+<block wx:if="{{current !== letterList.length - 1}}">
+	<van-icon class="arrow-right" name="arrow"  bindtap='nextImg' color="white" size="45px"/>
+</block>
+</view>

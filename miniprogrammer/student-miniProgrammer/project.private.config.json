@@ -70,6 +70,48 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "写信--提示",
+                    "pathName": "pages/main-music/main-music",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "写信界面",
+                    "pathName": "pages/email/email",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "test",
+                    "pathName": "pages/article/article",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "email",
+                    "pathName": "pages/email/email",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "发图",
+                    "pathName": "pages/send-image/send-image",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "读信",
+                    "pathName": "pages/read-letter/read-letter",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

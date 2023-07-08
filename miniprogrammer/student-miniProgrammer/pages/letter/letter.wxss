@@ -1,0 +1,102 @@
+/* pages/notice/notice.wxss */
+@import "../../assets/iconfont.wxss";
+/* editor 文本编译器 */
+.ql-active {
+  color: #497749;
+}
+
+.picker{
+  padding: 10rpx;
+}
+
+.wrapper {
+  padding: 5px;
+}
+
+.iconfont {
+  display: inline-block;
+  padding: 7px 7px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  border-bottom: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.page .container{
+	width: 100%;
+	padding: 40rpx;
+}
+.ql-container {
+  box-sizing: border-box;
+  padding: 12px 15px;
+  width: 100%;
+  height: 92%;
+  background: #fff;
+  margin-top: 24rpx;
+  font-size: 16px;
+  line-height: 1.5;
+  border: dashed #f3f3f3;
+  border-radius: 15rpx;
+}
+
+.top-tabs {
+	display: flex;
+	font-size: 40rpx;
+	color: #fff;
+}
+
+/* 背景图 */
+.bg-image,
+.bg-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-cover .image {
+	width: 200px;
+	height: 300px;
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+	z-index: 9;
+	width: 85vw;
+	height: 70vh;
+	margin: 3vh auto;
+	margin-top: 5vh;
+	border-radius: 2%;
+}
+
+.contact{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: solid 4rpx #f3f3f3;
+}
+.contact .receiver{
+	color:#554f4f;
+	margin-bottom: 20rpx;
+}
+
+  /* 登录按钮 */
+  .confirm-btn{
+	height: 120rpx;
+	background-color: #409eff;
+	color: blanchedalmond;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85vw;
+}
